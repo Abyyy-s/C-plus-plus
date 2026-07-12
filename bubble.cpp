@@ -12,7 +12,7 @@ cin>>n;
 
 for(i=0;i<n;i++)
 {
-	cout<<"enter element "<<i+1<<":"<<endl;
+	cout<<"enter element"<<i+1<<":"<<endl;
 	int x;
 	cin>>x;
 	v.push_back(x);
@@ -41,8 +41,8 @@ cout<<"sorted array is\n";
 
 for(i=0;i<n;i++)
 {
-	cout<<v[i]<<" ";
-	}
+	cout<<v[i]<<' ';
+	cout<<'\n'}
 	return 0;
 }
 			

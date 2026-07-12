@@ -42,10 +42,10 @@ cout<<"sorted array is\n";
 for(i=0;i<n;i++)
 {
 	cout<<v[i]<<' ';
-	cout<<'\n';}
-	return 0;
-}
-			
+	}
+	
 
+	cout<<'\n';		
+return 0;}
 
 

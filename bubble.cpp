@@ -1,29 +1,51 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main()
 {
-    int i, n, arr[15];
-    
-    cout << "enter the limit (maximum 15): ";
-    cin >> n;
-    
 
-    if (n > 15) {
-        cout << "Error: Limit cannot be greater than 15!" << endl;
-        return 1;
-    }
-    
-    for(i = 0; i < n; i++) {
-        cout << "enter element " << i << ": " << endl;
-        cin >> arr[i];
-    }
-    
-    cout << "\nYour elements are:" << endl;
-    for(i = 0; i < n; i++) {
-        cout << arr[i] << endl;
-    }
-    
-    return 0;
+vector<int>v;
+int n,j,i,temp=0;
+cout<<"enter the limit";
+cin>>n;
+
+for(i=0;i<n;i++)
+{
+	cout<<"enter element "<<i+1<<":"<<endl;
+	int x;
+	cin>>x;
+	v.push_back(x);
+	}
+	
+for(i=0;i<n-1;i++)
+{ bool sw=false;
+	for(j=0;j<n-i-1;j++)
+	{
+		if(v[j]>v[j+1])
+		{
+			//temp=v[j];
+			//v[j]=v[j+1];
+			//v[j+1]=temp;
+			swap(v[j],v[j+1]);
+			sw=true;
+		}
+		
+		}
+		if(!sw)
+		{
+			break;
+			}}
+		
+cout<<"sorted array is\n";
+
+for(i=0;i<n;i++)
+{
+	cout<<v[i]<<" ";
+	}
+	return 0;
 }
+			
+
+
 
